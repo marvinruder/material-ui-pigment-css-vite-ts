@@ -1,4 +1,3 @@
-import * as React from 'react';
 import DefaultPropsProvider from '@mui/material/DefaultPropsProvider';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material-pigment-css/Container';
@@ -7,6 +6,7 @@ import Stack from '@mui/material-pigment-css/Stack';
 import Typography from '@mui/material/Typography';
 import Chip from '@mui/material/Chip';
 import { styled } from '@mui/material-pigment-css';
+import Fingerprint from '@mui/icons-material/Fingerprint';
 
 const Title = styled('div')(({ theme }) => ({
   color: theme.vars.palette.text.primary,
@@ -37,6 +37,7 @@ export default function Home() {
                   color: 'primary.dark',
                 })}
               />
+              <Fingerprint />
               <Typography
                 variant="h1"
                 sx={{
